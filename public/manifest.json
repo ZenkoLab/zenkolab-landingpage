@@ -1,0 +1,28 @@
+{
+  "name": "ZenkoLab - IA pour le Dépistage Rétinien",
+  "short_name": "ZenkoLab",
+  "description": "ZenkoLab développe des solutions d'intelligence artificielle pour le dépistage automatisé des pathologies rétiniennes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a0a0a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["medical", "health", "productivity"],
+  "prefer_related_applications": false
+}
