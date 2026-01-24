@@ -50,7 +50,7 @@ export function AiPipelineSection() {
               Pipeline IA
             </h2>
             <p className="mt-4 text-lg text-zinc-600">
-              Une technologie de pointe, de l'acquisition à la restitution
+              Une technologie de pointe, de l&apos;acquisition à la restitution
             </p>
         </div>
 

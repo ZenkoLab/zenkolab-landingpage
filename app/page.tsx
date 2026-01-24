@@ -48,12 +48,12 @@ export default function Home() {
       <Navbar1 {...navbarData} />
       <HeroSection
         badge={{
-          text: "200K+",
-          suffix: "dossiers patient déjà analysés",
+          text: "En déploiement",
+          suffix: "avec nos premiers partenaires",
           action: null,
         }}
-        title="Un oeil sur demain, dès aujourd'hui."
-        description="Concentrez votre temps sur des cas qui comptent vraiment."
+        title="Un œil sur demain, dès aujourd'hui."
+        description="Aidez vos orthoptistes à identifier les patients à risque, plus vite."
         actions={[
           {
             text: "Demander une démo",

@@ -13,33 +13,33 @@ export function GlowingEffectDemo() {
             Fonctionnalités clés
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Plus d'impact. Moins d'attente.
+            Conçu pour le terrain.
           </h2>
         </div>
         <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
           <GridItem
             area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
             icon={<Image className="h-4 w-4" />}
-            title="Analyse automatique des images"
-            description="ZenkoLab analyse les données de chaque patient à l'aide d'outils state-of-the-art et détecte les pathologies oculaires."
+            title="Lecture des fonds d'œil et OCT"
+            description="ZenkoLab analyse automatiquement les rétinographies et coupes OCT pour détecter les signes de DMLA, rétinopathie diabétique et glaucome."
           />
           <GridItem
             area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
             icon={<Star className="h-4 w-4" />}
-            title="Tri intelligent des dossiers"
-            description="Passez du temps là où il est nécessaire. ZenkoLab vous aide à différencier les patients bénins des patients à risque."
+            title="Priorisation des urgences"
+            description="Les dossiers à risque remontent en priorité. L'ophtalmologiste se concentre sur les cas qui nécessitent son expertise."
           />
           <GridItem
             area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
             icon={<Smile className="h-4 w-4" />}
-            title="Plug & play dans vos outils"
-            description="ZenkoLab s'intègre aux logiciels ophtalmologiques déjà existants. Pas besoin d'acheter de nouveau matériel."
+            title="Intégration à vos logiciels"
+            description="ZenkoLab se connecte à votre rétinographe et à votre OCT. Pas de changement d'habitude, pas de nouveau matériel."
           />
           <GridItem
             area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
             icon={<AlertCircle className="h-4 w-4" />}
-            title="Pilotage simple et conforme"
-            description="Volumes, délais, complétude... le tout RGPD & HDS."
+            title="Conforme et sécurisé"
+            description="Hébergement HDS, conformité RGPD. Vos données restent en France."
           />
         </ul>
       </div>

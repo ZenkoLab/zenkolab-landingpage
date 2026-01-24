@@ -1,7 +1,7 @@
-import { Icons } from "@/components/ui/icons"
 import { Button } from "@/components/ui/button"
 import { RainbowButton } from "@/components/ui/rainbow-button"
 import { Mail, Linkedin } from "lucide-react"
+import Link from "next/link"
 
 function StackedCircularFooter() {
   return (
@@ -9,21 +9,21 @@ function StackedCircularFooter() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center">
           <nav className="mb-8 flex flex-wrap justify-center gap-6">
-            <a href="/" className="hover:text-primary">
+            <Link href="/" className="hover:text-primary">
               Accueil
-            </a>
-            <a href="/produit" className="hover:text-primary">
+            </Link>
+            <Link href="/produit" className="hover:text-primary">
               Produit
-            </a>
-            <a href="/tarifs" className="hover:text-primary">
+            </Link>
+            <Link href="/tarifs" className="hover:text-primary">
               Tarifs
-            </a>
-            <a href="/apropos" className="hover:text-primary">
+            </Link>
+            <Link href="/apropos" className="hover:text-primary">
               À propos
-            </a>
-            <a href="/contact" className="hover:text-primary">
+            </Link>
+            <Link href="/contact" className="hover:text-primary">
               Contact
-            </a>
+            </Link>
           </nav>
           <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
             <Button 
@@ -49,7 +49,7 @@ function StackedCircularFooter() {
               </a>
             </Button>
             <RainbowButton className="rounded-full h-10 px-6" asChild>
-              <a href="/contact">Demander une démo</a>
+              <Link href="/contact">Demander une démo</Link>
             </RainbowButton>
           </div>
           <div className="text-center">

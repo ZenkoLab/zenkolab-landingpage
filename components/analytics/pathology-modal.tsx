@@ -51,7 +51,7 @@ export const PathologyModal: React.FC<PathologyModalProps> = ({ data, onClose })
           <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
             <div className="flex items-center gap-2 text-blue-700 font-bold text-sm uppercase tracking-wide mb-3">
               <FileText className="w-4 h-4" />
-              Rapport d'analyse IA
+              Rapport d&apos;analyse IA
             </div>
             <p className="text-slate-700 leading-relaxed text-lg">
               {data.detailedAnalysis}

@@ -33,7 +33,7 @@ export const Glossary: React.FC<GlossaryProps> = ({ definition, index }) => {
       {/* Simple Definition */}
       <div className="mb-6 flex-grow">
         <p className="text-lg font-medium text-blue-600 leading-snug">
-          "{definition.simpleDefinition}"
+          &quot;{definition.simpleDefinition}&quot;
         </p>
       </div>
 
