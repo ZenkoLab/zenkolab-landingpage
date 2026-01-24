@@ -100,7 +100,7 @@ export function HomePipeline() {
         </h1>
         <div className="h-1.5 bg-blue-600 mx-auto rounded-full mb-6 w-[100px]" />
         <p className="text-muted-foreground text-lg">
-          De la prise de mesures au compte-rendu : comment ZenkoLab s'intègre à votre cabinet.
+          De la prise de mesures au compte-rendu : comment ZenkoLab s&apos;intègre à votre cabinet.
         </p>
       </header>
 

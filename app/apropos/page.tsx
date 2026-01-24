@@ -52,7 +52,7 @@ export default function AProposPage() {
             Rencontre des fondateurs
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
-            Josselin et Chakib se rencontrent sur les bancs de CentraleSupélec. Partageant une vision commune sur l'impact de l'IA en santé, ils décident d'unir leurs forces.
+            Josselin et Chakib se rencontrent sur les bancs de CentraleSupélec. Partageant une vision commune sur l&apos;impact de l&apos;IA en santé, ils décident d&apos;unir leurs forces.
           </p>
         </div>
       ),
@@ -78,7 +78,7 @@ export default function AProposPage() {
             Preuve de Concept
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
-            Validation du premier prototype avec des taux de précision prometteurs. Intégration à l'incubateur de CentraleSupélec.
+            Validation du premier prototype avec des taux de précision prometteurs. Intégration à l&apos;incubateur de CentraleSupélec.
           </p>
         </div>
       ),
@@ -101,10 +101,10 @@ export default function AProposPage() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            L'avenir s'écrit maintenant
+            L&apos;avenir s&apos;écrit maintenant
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
-            Nous continuons d'innover pour rendre le dépistage ophtalmologique accessible à tous. Rejoignez-nous dans cette aventure !
+            Nous continuons d&apos;innover pour rendre le dépistage ophtalmologique accessible à tous. Rejoignez-nous dans cette aventure !
           </p>
         </div>
       ),
@@ -163,7 +163,7 @@ export default function AProposPage() {
                   <div className="h-1.5 bg-blue-600 w-[100px] rounded-full mb-6" />
                 </div>
                 <p className="text-lg text-muted-foreground">
-                  Face au vieillissement de la population et à la pénurie croissante d'ophtalmologistes, les délais de rendez-vous s'allongent dangereusement.
+                  Face au vieillissement de la population et à la pénurie croissante d&apos;ophtalmologistes, les délais de rendez-vous s&apos;allongent dangereusement.
                 </p>
                 <p className="text-lg text-muted-foreground">
                   Notre mission est de déployer une solution de triage intelligent qui permet aux orthoptistes et aux centres de santé de pré-qualifier les dossiers patients. Nous permettons aux médecins de se concentrer sur les cas pathologiques nécessitant une expertise immédiate.
@@ -248,7 +248,7 @@ export default function AProposPage() {
         <section className="py-12 bg-muted/30">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-4">L'équipe fondatrice</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-4">L&apos;équipe fondatrice</h2>
               <div className="h-1.5 bg-blue-600 mx-auto rounded-full mb-6 w-[100px]" />
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Une alliance complémentaire entre expertise technique et vision stratégique.
@@ -274,7 +274,7 @@ export default function AProposPage() {
                   <h3 className="text-xl font-bold">Josselin Perret</h3>
                   <p className="text-primary font-medium mb-4">Cofondateur & CEO</p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Étudiant à CentraleSupélec, il a réalisé un échange académique à l'ESSEC Business School.
+                    Étudiant à CentraleSupélec, il a réalisé un échange académique à l&apos;ESSEC Business School.
                   </p>
                   <div className="flex items-center justify-center gap-4">
                     <a 
@@ -316,7 +316,7 @@ export default function AProposPage() {
                   <h3 className="text-xl font-bold">Chakib Lahrach</h3>
                   <p className="text-primary font-medium mb-4">Cofondateur & CTO</p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Étudiant à CentraleSupélec. Vice-président d'Automatants et président d'Unaite.
+                    Étudiant à CentraleSupélec. Vice-président d&apos;Automatants et président d&apos;Unaite.
                   </p>
                   <div className="flex items-center justify-center gap-4">
                     <a 
@@ -348,9 +348,9 @@ export default function AProposPage() {
         {/* CTA Section */}
         <section className="py-12 bg-primary/5">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-6">Prêt à rejoindre l'aventure ?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-6">Prêt à rejoindre l&apos;aventure ?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Que vous soyez un professionnel de santé ou un partenaire potentiel, nous serions ravis d'échanger avec vous.
+              Que vous soyez un professionnel de santé ou un partenaire potentiel, nous serions ravis d&apos;échanger avec vous.
             </p>
             <Link href="/contact">
               <Button size="lg" className="gap-2">

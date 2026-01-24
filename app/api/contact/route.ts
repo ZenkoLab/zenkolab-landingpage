@@ -63,13 +63,14 @@ export async function POST(request: Request) {
     } else {
       throw new Error(`L'envoi a échoué avec le statut: ${result.status}`);
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Erreur lors de l\'envoi de l\'email:', error);
+    const errorMessage = error instanceof Error ? error.message : "Erreur inconnue";
     return NextResponse.json(
       { 
         success: false, 
         message: "Une erreur est survenue lors de l'envoi",
-        error: error.message || "Erreur inconnue"
+        error: errorMessage
       },
       { status: 500 }
     );

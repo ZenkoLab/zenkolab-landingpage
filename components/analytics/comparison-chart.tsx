@@ -14,13 +14,25 @@ import {
 } from 'recharts';
 import { PATHOLOGIES } from './constants';
 
-const CustomTooltip = ({ active, payload, label }: any) => {
+interface TooltipPayloadEntry {
+  name: string;
+  value: number;
+  color: string;
+}
+
+interface CustomTooltipProps {
+  active?: boolean;
+  payload?: TooltipPayloadEntry[];
+  label?: string;
+}
+
+const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
   if (active && payload && payload.length) {
     return (
       <div className="bg-slate-900 text-white p-4 rounded-xl shadow-2xl border border-slate-800 min-w-[180px]">
         <p className="font-bold text-base mb-3 pb-2 border-b border-slate-700">{label}</p>
         <div className="space-y-3">
-          {payload.map((entry: any, index: number) => (
+          {payload.map((entry: TooltipPayloadEntry, index: number) => (
             <div key={index} className="flex flex-col">
               <div className="flex items-center justify-between text-sm mb-1">
                 <span className="text-slate-400 font-medium">{entry.name}</span>

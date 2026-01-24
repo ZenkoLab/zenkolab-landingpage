@@ -43,7 +43,7 @@ export const AiPerformanceSection = () => {
                 onClick={() => document.getElementById('glossary')?.scrollIntoView({ behavior: 'smooth' })}
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-full transition-all hover:border-slate-300"
               >
-                Comprendre l'IA
+                Comprendre l&apos;IA
               </button>
             </div>
         </div>
@@ -91,7 +91,7 @@ export const AiPerformanceSection = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-white text-lg">Filet de sécurité</h4>
-                      <p className="text-sm text-slate-400 mt-1">Haute sensibilité pour minimiser le risque de passer à côté d'un cas pathologique.</p>
+                      <p className="text-sm text-slate-400 mt-1">Haute sensibilité pour minimiser le risque de passer à côté d&apos;un cas pathologique.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
@@ -100,7 +100,7 @@ export const AiPerformanceSection = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-white text-lg">Résultat en quelques secondes</h4>
-                      <p className="text-sm text-slate-400 mt-1">Le pré-diagnostic s'affiche avant même que le patient ait quitté le cabinet.</p>
+                      <p className="text-sm text-slate-400 mt-1">Le pré-diagnostic s&apos;affiche avant même que le patient ait quitté le cabinet.</p>
                     </div>
                   </div>
                 </div>

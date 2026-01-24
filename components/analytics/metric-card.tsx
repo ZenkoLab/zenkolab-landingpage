@@ -90,7 +90,7 @@ export const MetricCard: React.FC<MetricCardProps> = ({ data, index, onClick }) 
       {/* Click Hint */}
       <div className="flex items-center justify-center gap-2 text-slate-400 text-sm font-medium group-hover:text-blue-600 transition-colors mt-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
         <PlusCircle className="w-4 h-4" />
-        Voir l'analyse détaillée
+        Voir l&apos;analyse détaillée
       </div>
     </div>
   );
