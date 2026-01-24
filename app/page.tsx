@@ -2,49 +2,17 @@
 
 import { HeroSection } from "@/components/blocks/hero-section"
 import { Navbar1 } from "@/components/blocks/navbar1"
-import { Icons } from "@/components/ui/icons"
-import { Book, Sunset, Trees, Zap } from "lucide-react"
 import dynamic from "next/dynamic"
+import { navbarData } from "@/lib/navigation"
 
 const GlowingEffectDemo = dynamic(() => import("@/components/ui/glowing-effect-demo").then(mod => mod.GlowingEffectDemo))
 const LogoCloud = dynamic(() => import("@/components/ui/logo-cloud-2").then(mod => mod.LogoCloud))
 const StackedCircularFooter = dynamic(() => import("@/components/ui/stacked-circular-footer").then(mod => mod.StackedCircularFooter))
 const HomePipeline = dynamic(() => import("@/components/home-pipeline/home-pipeline").then(mod => mod.HomePipeline))
 
-const navbarData = {
-  logo: {
-    url: "/",
-    src: "/logo.png",
-    alt: "Zenkolab Logo",
-    title: "zenkolab",
-  },
-  menu: [
-    {
-      title: "Accueil",
-      url: "/",
-    },
-    {
-      title: "Produit",
-      url: "/produit",
-    },
-    {
-      title: "Tarifs",
-      url: "/tarifs",
-    },
-    {
-      title: "À propos",
-      url: "/apropos",
-    },
-  ],
-  mobileExtraLinks: [],
-  auth: {
-    signup: { text: "Nous contacter", url: "/contact" },
-  },
-};
-
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen">
       <Navbar1 {...navbarData} />
       <HeroSection
         badge={{
@@ -53,7 +21,7 @@ export default function Home() {
           action: null,
         }}
         title="Un œil sur demain, dès aujourd'hui."
-        description="Aidez vos orthoptistes à identifier les patients à risque, plus vite."
+        description="Aidez vos orthoptistes à identifier les patients à risque, plus vite. ZenkoLab analyse les fonds d'œil et OCT grâce à l'intelligence artificielle."
         actions={[
           {
             text: "Demander une démo",

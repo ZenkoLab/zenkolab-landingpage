@@ -1,5 +1,7 @@
-import { PlusIcon } from "lucide-react";
+"use client";
+
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 type Logo = {
   src: string;
@@ -9,135 +11,113 @@ type Logo = {
   className?: string;
 };
 
-type LogoCloudProps = React.ComponentProps<"div">;
-
-export function LogoCloud({ className, ...props }: LogoCloudProps) {
+export function LogoCloud() {
   return (
-    <section className="py-16 px-6">
+    <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-center">
-            Nos partenaires et soutiens
-          </h2>
-        </div>
-        <div
-          className={cn(
-            "relative grid grid-cols-2 border-x md:grid-cols-3",
-            className
-          )}
-          {...props}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-12 text-center"
         >
-          <div className="-translate-x-1/2 -top-px pointer-events-none absolute left-1/2 w-screen border-t" />
-
+          <span className="inline-block text-sm font-medium text-brand mb-3">
+            Écosystème
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+            Nos partenaires et <span className="text-gradient">soutiens</span>
+          </h2>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="relative grid grid-cols-2 md:grid-cols-3 border border-border rounded-2xl overflow-hidden"
+        >
           <LogoCard
-            className="relative border-r border-b bg-secondary dark:bg-secondary/30"
+            className="border-r border-b bg-background"
             logo={{
               src: "/21st.png",
               alt: "21st",
-              className: "h-10 w-auto md:h-16",
+              className: "h-10 w-auto md:h-14",
             }}
-          >
-            <PlusIcon
-              className="-right-[12.5px] -bottom-[12.5px] absolute z-10 size-6"
-              strokeWidth={1}
-            />
-          </LogoCard>
+          />
 
           <LogoCard
-            className="border-b md:border-r"
+            className="border-b md:border-r bg-muted/50"
             logo={{
               src: "https://upload.wikimedia.org/wikipedia/fr/8/86/Logo_CentraleSup%C3%A9lec.svg",
               alt: "CentraleSupélec",
-              className: "h-12 w-auto md:h-20",
+              className: "h-10 w-auto md:h-16",
             }}
           />
 
           <LogoCard
-            className="relative border-r border-b md:border-r-0 md:bg-secondary dark:md:bg-secondary/30"
+            className="border-r border-b md:border-r-0 bg-background"
             logo={{
               src: "/docrezo.png",
               alt: "DocRezo",
-              className: "h-10 w-auto md:h-16",
+              className: "h-10 w-auto md:h-14",
             }}
-          >
-            <PlusIcon
-              className="-right-[12.5px] -bottom-[12.5px] absolute z-10 size-6 md:hidden"
-              strokeWidth={1}
-            />
-            <PlusIcon
-              className="-bottom-[12.5px] -left-[12.5px] absolute z-10 hidden size-6 md:block"
-              strokeWidth={1}
-            />
-          </LogoCard>
+          />
 
           <LogoCard
-            className="relative border-b bg-secondary md:border-r md:border-b-0 md:bg-background dark:bg-secondary/30 md:dark:bg-background"
+            className="border-b md:border-r md:border-b-0 bg-muted/50"
             logo={{
               src: "https://upload.wikimedia.org/wikipedia/commons/9/95/Inr_logo_rouge.svg",
               alt: "Inria",
-              className: "h-10 w-auto md:h-16",
+              className: "h-10 w-auto md:h-14",
             }}
           />
 
           <LogoCard
-            className="relative border-r border-b bg-secondary md:border-b-0 md:bg-secondary dark:bg-secondary/30 md:dark:bg-secondary/30"
+            className="border-r md:border-b-0 bg-background"
             logo={{
               src: "/aphp.png",
               alt: "APHP",
-              className: "h-10 w-auto md:h-16",
-            }}
-          >
-            <PlusIcon
-              className="-right-[12.5px] -bottom-[12.5px] md:-left-[12.5px] absolute z-10 size-6 md:hidden"
-              strokeWidth={1}
-            />
-          </LogoCard>
-
-          <LogoCard
-            className="border-b bg-background md:border-r-0 md:border-b-0 md:bg-background dark:md:bg-background"
-            logo={{
-              src: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Logo_Universit%C3%A9_Paris-Saclay_2019-12.svg",
-              alt: "Université Paris-Saclay",
-              className: "h-12 w-auto md:h-20",
+              className: "h-10 w-auto md:h-14",
             }}
           />
 
-          <div className="-translate-x-1/2 -bottom-px pointer-events-none absolute left-1/2 w-screen border-b" />
-        </div>
+          <LogoCard
+            className="bg-muted/50"
+            logo={{
+              src: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Logo_Universit%C3%A9_Paris-Saclay_2019-12.svg",
+              alt: "Université Paris-Saclay",
+              className: "h-10 w-auto md:h-16",
+            }}
+          />
+        </motion.div>
       </div>
     </section>
   );
 }
 
-type LogoCardProps = React.ComponentProps<"div"> & {
-  logo?: Logo;
-  text?: string;
-};
+interface LogoCardProps {
+  logo: Logo;
+  className?: string;
+}
 
-function LogoCard({ logo, text, className, children, ...props }: LogoCardProps) {
+function LogoCard({ logo, className }: LogoCardProps) {
   return (
     <div
       className={cn(
-        "flex items-center justify-center bg-background px-4 py-8 md:p-8",
+        "flex items-center justify-center px-6 py-10 md:py-12 transition-colors hover:bg-brand/5",
         className
       )}
-      {...props}
     >
-      {logo ? (
-        <img
-          alt={logo.alt}
-          className={cn(
-            "pointer-events-none select-none dark:brightness-0 dark:invert object-contain",
-            logo.className || "h-4 md:h-5"
-          )}
-          height={logo.height || "auto"}
-          src={logo.src}
-          width={logo.width || "auto"}
-        />
-      ) : (
-        <span className="text-lg font-bold text-muted-foreground/80">{text}</span>
-      )}
-      {children}
+      <img
+        alt={logo.alt}
+        className={cn(
+          "pointer-events-none select-none dark:brightness-0 dark:invert object-contain transition-transform hover:scale-105",
+          logo.className || "h-4 md:h-5"
+        )}
+        height={logo.height || "auto"}
+        src={logo.src}
+        width={logo.width || "auto"}
+      />
     </div>
   );
 }
