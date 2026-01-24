@@ -17,7 +17,7 @@ export function LogoCloud({ className, ...props }: LogoCloudProps) {
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-center">
-            Ils nous font confiance
+            Nos partenaires et soutiens
           </h2>
         </div>
         <div

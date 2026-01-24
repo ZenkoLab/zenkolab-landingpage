@@ -23,11 +23,11 @@ export const AiPerformanceSection = () => {
         {/* Section Header (Adapted from Hero) */}
         <div className="mb-16 text-left">
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6 leading-[1.1] break-words hyphens-auto">
-              L'excellence du diagnostic <br className="hidden md:block" />
-              <span className="text-blue-600">ophtalmologique</span>.
+              Des performances <br className="hidden md:block" />
+              <span className="text-blue-600">validées cliniquement</span>.
             </h2>
             <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-8">
-              Le modèle ZenkoLab surpasse les standards cliniques dans la détection précoce des pathologies rétiniennes majeures. Une précision inégalée pour sécuriser le diagnostic médical.
+              Notre algorithme a été entraîné et évalué sur des jeux de données de référence en ophtalmologie. Voici les résultats obtenus lors de nos validations internes.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -53,7 +53,7 @@ export const AiPerformanceSection = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
             <div>
               <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">Résultats par Pathologie</h3>
-              <p className="text-slate-500 text-lg">Analyse détaillée des performances du modèle sur les datasets de validation. Cliquez sur une carte pour voir l'analyse.</p>
+              <p className="text-slate-500 text-lg">Performances mesurées sur des datasets de validation. Cliquez sur une carte pour en savoir plus.</p>
             </div>
           </div>
           
@@ -78,10 +78,10 @@ export const AiPerformanceSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center relative z-10">
               <div>
                 <h3 className="text-3xl md:text-4xl font-bold mb-6">
-                  Au-delà de l'œil humain
+                  Un second regard, pas un remplacement
                 </h3>
                 <p className="text-slate-300 text-lg leading-relaxed mb-8">
-                  Comparé à un ophtalmologue généraliste, l'algorithme ZenkoLab démontre une sensibilité systématiquement supérieure, réduisant drastiquement le risque de faux négatifs.
+                  ZenkoLab aide à repérer ce qui pourrait passer inaperçu. La décision finale reste toujours entre les mains du médecin.
                 </p>
                 
                 <div className="space-y-6">
@@ -90,8 +90,8 @@ export const AiPerformanceSection = () => {
                       <ShieldCheck className="w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-lg">Sécurité accrue</h4>
-                      <p className="text-sm text-slate-400 mt-1">99% de sensibilité moyenne sur les cas critiques, minimisant les pertes de chances.</p>
+                      <h4 className="font-bold text-white text-lg">Filet de sécurité</h4>
+                      <p className="text-sm text-slate-400 mt-1">Haute sensibilité pour minimiser le risque de passer à côté d'un cas pathologique.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
@@ -99,8 +99,8 @@ export const AiPerformanceSection = () => {
                       <Zap className="w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-lg">Analyse instantanée</h4>
-                      <p className="text-sm text-slate-400 mt-1">Un résultat disponible en moins de 3 secondes pour fluidifier le parcours de soin.</p>
+                      <h4 className="font-bold text-white text-lg">Résultat en quelques secondes</h4>
+                      <p className="text-sm text-slate-400 mt-1">Le pré-diagnostic s'affiche avant même que le patient ait quitté le cabinet.</p>
                     </div>
                   </div>
                 </div>

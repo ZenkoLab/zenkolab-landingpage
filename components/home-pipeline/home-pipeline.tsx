@@ -96,11 +96,11 @@ export function HomePipeline() {
       {/* Header */}
       <header className="text-center mb-12 max-w-5xl z-30 relative">
         <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-tight leading-tight">
-          Le Parcours de Soin <span className="text-blue-600">Augmenté</span>
+          Le Parcours de Soin <span className="text-blue-600">Simplifié</span>
         </h1>
         <div className="h-1.5 bg-blue-600 mx-auto rounded-full mb-6 w-[100px]" />
         <p className="text-muted-foreground text-lg">
-          Simulation du pipeline IA de détection des risques en temps réel.
+          De la prise de mesures au compte-rendu : comment ZenkoLab s'intègre à votre cabinet.
         </p>
       </header>
 
@@ -141,8 +141,8 @@ export function HomePipeline() {
           />
           <PipelineCard
             title="Centre de Mesure"
-            description="Le patient se rend dans un centre partenaire pour son examen de routine."
-            tags={['DocRezo', 'Klarity', 'Partenaires']}
+            description="Le patient se rend chez l'orthoptiste ou dans un centre partenaire pour un bilan visuel."
+            tags={['Orthoptiste', 'Opticien', 'MSP']}
             isActive={isStageActive(PipelineStage.CENTER_VISIT)}
             isCompleted={isStageCompleted(PipelineStage.CENTER_VISIT)}
           />
@@ -162,8 +162,8 @@ export function HomePipeline() {
           />
           <PipelineCard
             title="Prise de Mesures"
-            description="Un.e infirmier.e effectue les examens cliniques et saisit les constantes."
-            tags={['Constantes', 'Symptômes', 'Clinical Data']}
+            description="L'orthoptiste réalise les examens : fond d'œil, OCT, réfraction, tonométrie."
+            tags={['Rétinographie', 'OCT', 'Tonométrie']}
             isActive={isStageActive(PipelineStage.MEASUREMENTS)}
             isCompleted={isStageCompleted(PipelineStage.MEASUREMENTS)}
           />
@@ -182,9 +182,9 @@ export function HomePipeline() {
             isCompleted={isStageCompleted(PipelineStage.DATA_TRANSFER)}
           />
           <PipelineCard
-            title="Transfert Sécurisé"
-            description="Les données sont chiffrées et envoyées vers l'infrastructure ZenkoLab."
-            tags={['RGPD Compliant', 'HDS Certified', 'End-to-End Encryption']}
+            title="Envoi Sécurisé"
+            description="Les images sont transmises de façon chiffrée vers les serveurs ZenkoLab hébergés en France."
+            tags={['HDS', 'RGPD', 'Chiffré']}
             isActive={isStageActive(PipelineStage.DATA_TRANSFER)}
             isCompleted={isStageCompleted(PipelineStage.DATA_TRANSFER)}
           />
@@ -204,9 +204,9 @@ export function HomePipeline() {
             color="text-blue-600"
           />
           <PipelineCard
-            title="Analyse IA ZenkoLab"
-            description="Notre modèle analyse les données cliniques pour détecter des patterns de risque invisibles."
-            tags={['Deep Learning', 'Predictive Model', 'Real-time']}
+            title="Analyse ZenkoLab"
+            description="Le logiciel examine les images et identifie les signes évocateurs de pathologie rétinienne."
+            tags={['DMLA', 'Rétinopathie', 'Glaucome']}
             isActive={isStageActive(PipelineStage.AI_ANALYSIS)}
             isCompleted={isStageCompleted(PipelineStage.AI_ANALYSIS)}
           />
@@ -236,9 +236,9 @@ export function HomePipeline() {
                         color="text-red-500"
                     />
                     <PipelineCard
-                        title="Alerte Risque Détectée"
-                        description="Le modèle identifie un risque élevé pour le patient. Un signal prioritaire est émis."
-                        tags={['Priorité Haute', 'Signalement Immédiat']}
+                        title="Anomalie Détectée"
+                        description="Le dossier est signalé comme prioritaire. L'ophtalmologiste est notifié pour validation."
+                        tags={['Prioritaire', 'À valider']}
                         isActive={isStageActive(PipelineStage.RISK_ALERT)}
                         isCompleted={isStageCompleted(PipelineStage.RISK_ALERT)}
                         isAlert={true}
@@ -253,9 +253,9 @@ export function HomePipeline() {
                         color="text-black"
                     />
                     <PipelineCard
-                        title="Prise en Charge Rapide"
-                        description="Grâce à l'alerte, le patient est orienté immédiatement vers le parcours de soin adapté."
-                        tags={['Intervention', 'Suivi Renforcé']}
+                        title="Prise en Charge"
+                        description="Le patient est rapidement orienté vers une consultation spécialisée."
+                        tags={['RDV accéléré', 'Suivi']}
                         isActive={isStageActive(PipelineStage.CARE_TAKEN)}
                         isCompleted={isStageCompleted(PipelineStage.CARE_TAKEN)}
                     />
@@ -277,9 +277,9 @@ export function HomePipeline() {
                             color="text-green-600"
                         />
                         <PipelineCard
-                            title="Analyse Normale"
-                            description="Aucun facteur de risque immédiat détecté. Le patient continue son suivi standard."
-                            tags={['R.A.S.', 'Suivi Standard']}
+                            title="Bilan Normal"
+                            description="Pas d'anomalie détectée. Le patient poursuit son suivi habituel."
+                            tags={['R.A.S.', 'Suivi annuel']}
                             isActive={stage === PipelineStage.COMPLETE}
                             isCompleted={stage === PipelineStage.COMPLETE}
                         />
