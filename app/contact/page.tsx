@@ -24,6 +24,10 @@ const navbarData = {
       url: "/produit",
     },
     {
+      title: "Cas d'usage",
+      url: "/cas-d-usage",
+    },
+    {
       title: "Tarifs",
       url: "/tarifs",
     },
