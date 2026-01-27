@@ -2,7 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.zenkolab.dev'
-  const lastModified = new Date('2026-01-05')
+  // Use current date for lastModified to ensure search engines see fresh content
+  const lastModified = new Date()
 
   return [
     {
