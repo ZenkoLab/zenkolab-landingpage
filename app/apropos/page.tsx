@@ -35,6 +35,10 @@ const navbarData = {
       title: "À propos",
       url: "/apropos",
     },
+    {
+      title: "Blog",
+      url: "/blog",
+    },
   ],
   mobileExtraLinks: [],
   auth: {
